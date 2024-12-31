@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/icon.css">
+    
+    <title>ThiagoArrieta: Agenda tu turno</title>
+
+</head>
+<body>
+
+<div class="button-container" id="start-container">
+    <div class="title-container"> 
+        <h5>Thiago Arrieta</h5>
+        <label>El lugar que te hará destacar</label>
+    </div>
+    <button type="button" id="start"><span class="logo--cut"></span></button>
+    <label>Tu estilo, nuestra pasión. ¡Reserva tu cita ya!</label>
+</div>
+
+
+<div id="global" class="hidden">
+
+    <header>
+        <nav>
+            <h1 className='am-navbar-title'>
+                <a href="../../index.html"><span class="logo--cut"></span></a> 
+            </h1>
+        </nav> 
+    </header>
+
+
+    <main class="global-form">
+        <article>
+            <h2>Agenda tu Turno!</h2>
+        </article>
+
+        <article>
+            <form id="turn-form">
+                <label for="date">Fecha:</label>
+                <section class="form-group">
+                    <input type="date" id="date" class="input" required>
+                </section>
+            
+                <label for="service">Servicio:</label>
+                <section class="form-group">
+                    <div class="radio-inputs">
+		                
+                        <label>
+			                <input class="radio-input" type="radio" name="engine">
+				            <span class="radio-tile">
+					            <span class="radio-icon">
+						        <span class="fa6-solid--scissors"></span> </span>
+					            <span class="radio-label">Corte</span>
+				            </span>
+		                </label>
+
+                        <label>
+                            <input class="radio-input" type="radio" name="engine">
+                                <span class="radio-tile">
+					                <span class="radio-icon">
+                                    <span class="fa6-solid--scissors"></span> </span>
+                                    <span class="radio-label">Corte & Barba</span>
+                                </span>
+                        </label>
+
+		                <label>
+			                <input class="radio-input" type="radio" name="engine">
+				            <span class="radio-tile">
+					            <span class="radio-icon">
+                                <span class="fa6-solid--fire-flame-simple"></span>				        </span>
+					            <span class="radio-label">Global</span>
+				            </span>
+		                </label>
+
+		                <label>
+			                <input class="radio-input" type="radio" name="engine">
+				            <span class="radio-tile">
+					            <span class="radio-icon">
+                                <span class="fa6-solid--pump-soap"></span>					        </span>
+					            <span class="radio-label">Cuspide</span>
+				            </span>
+		                </label>
+  
+		                <label>
+			                <input class="radio-input" type="radio" name="engine">
+				            <span class="radio-tile">
+					            <span class="radio-icon">
+                                <span class="tabler--bulb-filled"></span>					        </span>
+					            <span class="radio-label">Claritos</span>
+				            </span>
+		                </label>
+
+                        <label>
+			                <input class="radio-input" type="radio" name="engine">
+				            <span class="radio-tile">
+					            <span class="radio-icon">
+                                <span class="tabler--bulb-filled"></span>					        </span>
+					            <span class="radio-label">Mechas</span>
+				            </span>
+		                </label>
+                    </div>
+                </section>
+
+        <article>
+            <section id="map"></section>
+        </article>
+
+            <label class="container-check">
+                <input type="checkbox" class="input" id="home-service">
+                <span class="custom-checkbox"></span>
+                    <label class="check-text">¿A Domicilio?</label>
+            </label>
+            
+            <section class="form-group" id="content-direction">
+                <input type="text" placeholder="Direccion" id="direction">  
+            </section>
+
+                <section class="form-group">
+                    <button type="button" id="send-wsp">Reservar via WhatsApp</button>
+                </section>
+            </form>          
+        </article>
+    
+
+    </main>
+
+    <footer class="footer">
+        <h6>© 2024 ThiagoArrieta</h6>
+    </footer>
+</div>
+    <script src="assets/js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbHnmIoJ8IWSN2HXnpPg0RXC2fi6pbFIs&callback=initMap&libraries=geometry" async defer></script>
+</body>
+</html>
